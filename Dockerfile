@@ -24,7 +24,7 @@ RUN unzip google_appengine_1.9.27.zip
 RUN rm google_appengine_1.9.27.zip
 ENV PATH=$PATH:/google_appengine/
 
-ADD . app/
+ADD package.json app/
 
 WORKDIR app/
 
