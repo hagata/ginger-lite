@@ -1,0 +1,14 @@
+User Stories:
+  ☐ As a developer, I should be able to pull the repo and run one command to get the build going
+
+  ☐ I should only have to have docker-toolbox installed to get the proper SDK's and node dependencies up and running
+
+
+ REquirements:
+   ☐ Python
+     ☐ requirements.txt with webapp2 jinja2 and other
+   ☐ Appengine SDK, simple installation to the right directory
+     ☐ should also have the PATH exported properly
+
+  make commands:
+    ☐ Should be a make fe-build that will "build" our files for us. If things inside and outside the container are mirrored. then running *npm i* inside the container should reflect outside
