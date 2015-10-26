@@ -1,0 +1,18 @@
+footer {
+  background: #ccc;
+  margin: 1em 0 0; }
+
+nav {
+  margin: 0 0 1em; }
+  nav ul {
+    list-style: none; }
+    nav ul li {
+      display: inline-block; }
+
+body {
+  background: #aaa;
+  font-family: helvetica, sans-serif; }
+
+h1 {
+  font-size: 3em;
+  color: white; }
