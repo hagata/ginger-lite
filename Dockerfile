@@ -28,10 +28,12 @@ ADD package.json app/
 
 WORKDIR app/
 
+RUN npm install -g gulp
 RUN npm install
 
-CMD dev_appserver.py . --host=0.0.0.0 \
-                          --admin_host=0.0.0.0 \
-                          --skip_sdk_update_check \
-                          --use_mtime_file_watcher
+
+# CMD dev_appserver.py . --host=0.0.0.0 \
+#                           --admin_host=0.0.0.0 \
+#                           --skip_sdk_update_check \
+#                           --use_mtime_file_watcher
 
