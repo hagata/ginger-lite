@@ -1,5 +1,8 @@
-application: jinja-quick
-version: 1
+# EDIT THIS FILE 
+# Change project name/ and version to suit your own project
+
+application: __PROJECT_NAME__
+version: __VERSION__
 runtime: python27
 api_version: 1
 threadsafe: yes
