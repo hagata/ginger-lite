@@ -15,7 +15,7 @@ gulp.task('parts', function() {
 })
 
 
-gulp.task('sass', function () {
+gulp.task('sass', ['parts'],function () {
   gulp.src('./_sass/global.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./static/css'));
