@@ -1,5 +1,5 @@
 @import 'modules';
-
+@import 'admin';
 
 body {
   background: #aaa;
@@ -11,3 +11,7 @@ h1 {
   color: white;
 }
 
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+}

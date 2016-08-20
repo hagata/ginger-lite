@@ -2,12 +2,50 @@ footer {
   background: #ccc;
   margin: 1em 0 0; }
 
-nav {
+.header {
   margin: 0 0 1em; }
-  nav ul {
+
+.main-nav {
+  display: flex;
+  width: 100%; }
+  .main-nav__list {
+    flex: 1 0;
+    list-style: none;
+    padding: 0; }
+  .main-nav__item {
+    display: inline-flex;
+    margin: 0 .5rem; }
+
+.user-login {
+  align-items: center;
+  display: flex;
+  flex: 1 0;
+  justify-content: flex-end; }
+  .user-login__name {
+    padding: 0 1rem; }
+    .user-login__name--admin {
+      font-size: .8rem;
+      color: #646464; }
+
+.enabled-locales {
+  padding: 1rem;
+  background: #848484;
+  margin: 1rem;
+  border-radius: 4px; }
+  .enabled-locales__list {
     list-style: none; }
-    nav ul li {
-      display: inline-block; }
+  .enabled-locales__list-item {
+    display: inline-block;
+    padding: 0 .25rem;
+    color: rgba(158, 158, 158, 0.5);
+    font-weight: lighter; }
+    .enabled-locales__list-item.enabled {
+      font-weight: bold;
+      color: darkslategrey; }
+
+.locale-toggles {
+  list-style: none;
+  padding-left: 1rem; }
 
 body {
   background: #aaa;
@@ -16,3 +54,7 @@ body {
 h1 {
   font-size: 3em;
   color: white; }
+
+.content {
+  max-width: 900px;
+  margin: 0 auto; }

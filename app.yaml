@@ -1,8 +1,5 @@
-# EDIT THIS FILE 
-# Change project name/ and version to suit your own project
-
-application: __PROJECT_NAME__
-version: __VERSION__
+application: jinja-quick
+version: 1
 runtime: python27
 api_version: 1
 threadsafe: yes
@@ -19,9 +16,16 @@ handlers:
   static_files: favicon.ico
   upload: favicon\.ico
 
-- url: .*
+- url: /
   script: main.app
 
+- url: /admin
+  script: main.app
+  login: admin
+
+- url: /admin/.*
+  script: main.app
+  login: admin
 
 libraries:
 - name: webapp2
