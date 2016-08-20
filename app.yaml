@@ -16,9 +16,16 @@ handlers:
   static_files: favicon.ico
   upload: favicon\.ico
 
-- url: .*
+- url: /
   script: main.app
 
+- url: /admin
+  script: main.app
+  login: admin
+
+- url: /admin/.*
+  script: main.app
+  login: admin
 
 libraries:
 - name: webapp2

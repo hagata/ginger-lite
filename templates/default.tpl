@@ -1,11 +1,6 @@
-{% include 'header/header.html' %}
-<body>
+{% extends 'base.tpl' %}
 
-{% include 'nav/nav.html' %}
-
-
-  {% block content %}
-  {% endblock %}
+{% block content %}
   <h1>Ginger–Lite</h1>
   <h2>A simple jinja2 boilerplate for AppEngine</h2>
   <p>
@@ -13,6 +8,4 @@
   This is inside a container <br>
     This is some cool stuff Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at impedit excepturi doloremque facilis aliquam perferendis! Dignissimos deleniti, quia ipsam temporibus fuga ipsum voluptate.
   </p>
-  {% include 'footer/footer.html' %}
-</body>
-</html>
+{% endblock %}

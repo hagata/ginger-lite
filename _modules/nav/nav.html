@@ -1,6 +1,18 @@
-<nav>
-  <ul>
-    <li>Home</li>
-    <li>End</li>
-  </ul>
-</nav>
+<header class="header">
+  <nav class="main-nav">
+    <ul class="main-nav__list">
+      <li class="main-nav__item"><a href="/">Home</a></li>
+      <li class="main-nav__item"><a href="/admin">Admin</a></li>
+    </ul>
+
+    <div class="user-login">
+
+      <p class="user-login__name">
+        {{nickname}} {%if is_admin %}<span class="user-login__name--admin">[ADMIN]</span>{% endif %}
+      </p>
+      {% if user %}
+      <a href="{{logout_url}}">Logout</a> {% else %}
+      <a href="{{login_url}}">Login</a> {% endif %}
+    </div>
+  </nav>
+</header>

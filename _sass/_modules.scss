@@ -3,14 +3,39 @@ footer {
   margin: 1em 0 0;
   
 }
-nav {
+.header {
   margin: 0 0 1em;
+}
 
-  ul {
+.main-nav {
+  display: flex;
+  width: 100%;
+
+  &__list {
+    flex:1 0;
     list-style: none;
+    padding: 0;
+  }
 
-    li {
-      display: inline-block;
+  &__item {
+    display: inline-flex;
+    margin: 0 .5rem;
+  }
+}
+
+.user-login {
+  align-items: center;
+  display: flex;
+  flex: 1 0;
+  justify-content: flex-end;
+
+  &__name {
+    padding: 0 1rem;
+
+    &--admin {
+      font-size: .8rem;
+      color: #646464;
     }
   }
+
 }

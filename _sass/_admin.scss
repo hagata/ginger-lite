@@ -1,0 +1,27 @@
+.enabled-locales {
+  padding: 1rem;
+  background: #848484;
+  margin: 1rem;
+  border-radius: 4px;
+
+  &__list {
+    list-style: none;
+  }
+
+  &__list-item {
+    display: inline-block;
+    padding: 0 .25rem;
+    color: rgba(158, 158, 158, 0.5);
+    font-weight: lighter;
+  
+  &.enabled {
+    font-weight: bold;
+    color: darkslategrey;
+    }
+  }
+}
+
+.locale-toggles {
+  list-style: none;
+  padding-left: 1rem;
+}
