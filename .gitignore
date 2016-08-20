@@ -2,3 +2,4 @@ node_modules
 .todo
 .sass-cache
 .pyc
+.log
