@@ -1,11 +1,17 @@
 {% extends 'base.tpl' %}
-
 {% block content %}
+
   <h1>Ginger–Lite</h1>
-  <h2>A simple jinja2 boilerplate for AppEngine</h2>
+  <h2>A boilerplate for AppEngine + Jinja2 Projects</h2>
+  
   <p>
-  This is watching for changes <br>
-  This is inside a container <br>
-    This is some cool stuff Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at impedit excepturi doloremque facilis aliquam perferendis! Dignissimos deleniti, quia ipsam temporibus fuga ipsum voluptate.
+  This boilerplate project includes:
   </p>
+  <ul>
+    <li>Users API</li>
+    <li>Docker Container</li>
+    <li>Gulp-GAE for use inside the container</li>
+    <li>DataStore nbd example/use case</li>
+  </ul>
+
 {% endblock %}
