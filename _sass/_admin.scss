@@ -1,15 +1,17 @@
 .enabled-locales {
   padding: 1rem;
-  background: #848484;
-  margin: 1rem;
+  background: #848484;  
   border-radius: 4px;
 
   &__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     list-style: none;
+    max-height: 120px
   }
 
   &__list-item {
-    display: inline-block;
     padding: 0 .25rem;
     color: rgba(158, 158, 158, 0.5);
     font-weight: lighter;
@@ -22,6 +24,29 @@
 }
 
 .locale-toggles {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   list-style: none;
+  max-height: 150px;
   padding-left: 1rem;
+}
+
+.admin-button {
+  display: inline-block;
+  border: 1px solid #DCDCDC;
+  text-align: center;
+  color: #444;
+  font-size: 11px;
+  font-weight: bold;
+  height: 27px;
+  padding: 0 8px;
+  line-height: 27px;
+  border-radius: 2px;
+  background-color: #f5f5f5;
+  background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+
+  &--disabled {
+    color: #b9b9b9;
+  }
 }

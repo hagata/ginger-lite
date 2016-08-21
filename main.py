@@ -53,7 +53,7 @@ def get_enabled_locales():
 
       
 def get_supported_locales():
-      return Locale.query(ancestor=LOCALES_KEY).fetch()
+      return Locale.query(ancestor=LOCALES_KEY).order(Locale.locale_id).fetch()
 
 # Route Handlers 
 class MainHandler(webapp2.RequestHandler):
@@ -82,7 +82,6 @@ class AdminHandler(webapp2.RequestHandler):
 
     context = {
       'locales': get_supported_locales(),
-      'query_results': get_enabled_locales()
     }
 
     if user:
@@ -99,7 +98,7 @@ class AdminHandler(webapp2.RequestHandler):
 class UpdateConfigHandler(webapp2.RequestHandler):
   def post(self):
 
-    locale_store=Locale.query(ancestor=enabled_locales_key());
+    locale_store=Locale.query(ancestor=LOCALES_KEY);
     retrieved_locales = locale_store.fetch();
 
     logging.info('\n\nretrieved_Store FROM POST:%s\n\n', retrieved_locales)
